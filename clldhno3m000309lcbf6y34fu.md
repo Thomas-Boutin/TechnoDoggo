@@ -10,7 +10,7 @@ tags: vuejs, apache, pwa, vue-router
 
 Recently we came into a weird issue: random blank screens appeared to the users of our [PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps). It happened after a webapp update.
 
-We started to investigate with the developer tools. It showed an issue during the startup: some successful HTPP calls (HTTP 200) contained HTML while the webapp tried loading javascript resources.
+We started to investigate with the developer tools. It showed an issue during the startup: some successful HTTP calls (HTTP 200) contained HTML while the webapp tried loading javascript resources.
 
 We had configured the used Apache [vhost](https://httpd.apache.org/docs/2.2/en/vhosts/examples.html) with a [FallbackResource](https://httpd.apache.org/docs/trunk/en/mod/mod_dir.html#fallbackresource). This looked like so :
 
