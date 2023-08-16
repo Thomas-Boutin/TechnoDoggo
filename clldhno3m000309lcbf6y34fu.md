@@ -42,7 +42,7 @@ This can be tricky during an update: the content on the Apache server changes, b
 
 We thought first about removing the **FallbackResource** directive. However, it comes at a high cost. We use that redirection because we implement a VueJS PWA with [Vue Router](https://router.vuejs.org/). It's needed to handle 404 scenarios when a user refreshes a route that Vue Router manages. Take a look a the schema below :
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1692133130718/1469a4cb-3b09-478f-bb28-4cad91252ff5.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1692185588604/98b95a62-e01a-43a5-ac7e-1278dbc52274.png align="center")
 
 This sums up why we should configure a **FallbackResource** directive. By the way, it's specified [in the Vue Router documentation](https://router.vuejs.org/guide/essentials/history-mode.html#Apache).
 
@@ -87,7 +87,7 @@ Here :
 * A **RewriteRule** rewrites the URL matched with a regex
     
 
-If we take a look, for instance, at the second rule bloc :
+If we take a look, for instance, at the second rule block :
 
 ```apache
 RewriteCond %{REQUEST_FILENAME} !-f
